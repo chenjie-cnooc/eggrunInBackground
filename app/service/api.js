@@ -6,7 +6,7 @@ class HttpService extends Service {
     async curl(data) {
         let result = {};
         let response = await this.ctx.curl("https://getman.cn/api/request",{                
-            method:"get",
+            method:"post",
             contentType:"json",
             data:data,
             timeout:30000,                      
